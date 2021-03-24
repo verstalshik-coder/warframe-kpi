@@ -1,0 +1,233 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+
+.close{
+	position: fixed;
+	width: 20px;
+	height: 20px;
+	margin: 30px auto 0 30px;
+}
+
+.main{
+	background: url(../img/login/bg.png) 50% 50% no-repeat;
+	width: 100%;
+	height: auto;
+}
+
+.logo{
+	display: block;
+	margin: 0 auto;
+	padding-top: 60px;
+}
+
+.content{
+	width: auto;
+	display: flex;
+	margin: 250px auto 0 auto;
+}
+
+.dec{
+	display: none;
+	width: 100%;
+	margin: 10px auto;
+	text-align: center;
+	justify-content: center;
+}
+
+.text{
+	font-size: 30px;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	width: 200px;
+	padding: 0 10px 0 20px;
+}
+
+.separator{
+	width: 15%;
+	height: 30px;
+	border-bottom: 3px solid white;
+	border-top: 3px solid white;
+}
+
+.ac{
+	padding: 30px;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+
+.ac input{
+	background: none;
+	font-size: 30px;
+	color: white;
+	width: 271px;
+	height: 40px;
+	border: none;
+	border-bottom: 2px solid white;
+	margin: 0 5% 50px auto;
+}
+
+.button{
+	font-size: 30px;
+	color: white;
+	background: #AC0000;	
+	width: 271px;
+	height: 50px;
+	text-align: center;
+	margin: 0 5% 0 auto;
+	border-radius: 15px;
+	border: 2px solid white;
+}
+
+.platform{
+	border-left: 3px solid white;
+	width: 50%;
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+}
+
+.cards{
+	width: 424px;
+	height: 55px;	
+	border-radius: 10px;
+	margin: 0 auto 37px 10%;
+}
+
+.cards img{
+	display: block;
+	margin: 11px auto;
+}
+
+.reg{
+	width: 100%;
+	font-size: 30px;
+	color: white;
+	text-align: center;
+	margin-top: 72px;
+	padding-bottom: 165px;
+}
+
+@media screen and (max-width: 1024px) {
+	.dec{
+		display: flex;
+	}
+
+	.content{
+		flex-direction: column-reverse;
+		margin-top: 20px;
+	}
+
+	.platform{
+		border-left: none;
+		padding: 20px 0 20px 0;
+		width: 100%;
+	}
+
+	.cards{
+		margin: 0 auto 10px auto;
+	}
+
+	.ac{
+		width: 100%;
+		padding: 20px 0 20px 0;
+	}
+
+	.ac input{
+		margin: 0 auto 30px auto;
+	}
+
+	.button{
+		margin: 0 auto;
+	}
+
+	.reg{
+		margin-top: 30px;
+		padding-bottom: 80px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.main{
+		background: black;
+	}
+
+	.cards{
+		width: 50%;
+		height: 50px;
+	}
+
+	.cards img{
+		margin: 8px auto;
+	}
+
+	.logo{
+		padding-top: 40px;
+		width: 377px;
+		height: 53px;
+	}
+
+	.text{
+		width: 150px;
+	}
+
+	.reg{
+		font-size: 22px;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.separator{
+		display: none;
+	}
+
+	.text{
+		font-size: 25px;
+	}
+
+	.cards{
+		width: 65%;
+	}
+
+	.platform{
+		padding: 10px 0 10px 0;
+	}
+
+	.ac{
+		padding: 10px 0 10px 0;
+	}
+
+	.ac input{
+		width: 65%;
+		font-size: 20px;
+		height: 25px;
+	}
+
+	.logo{
+		width: 300px;
+		height: 42px;
+	}
+
+	.reg{
+		padding-bottom: 40px;
+	}
+
+	.button{
+		width: 50%;
+		font-size: 20px;
+		height: 30px;
+	}
+
+	.close{
+		margin: 10px auto 0 10px;
+	}
+}
