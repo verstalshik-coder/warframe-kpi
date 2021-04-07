@@ -85,6 +85,58 @@ a{
 	margin: 0 auto;
 }
 
+.reg {
+	display: none;
+	flex-direction: column;
+	position: fixed;
+	background: rgba(0, 0, 0, 0.85);
+	width: 100vw;
+	height: 100vh;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	align-content: center;
+	justify-content: center;
+}
+
+.reg input{
+	background: none;
+	outline: none;
+	font-size: 30px;
+	color: white;
+	width: 30%;
+	height: 40px;
+	border: none;
+	border-bottom: 2px solid white;
+	margin: 30px auto;
+}
+
+.reg .close{
+	position: absolute;
+	margin: 0;
+	top: 30px;
+	right: 60px;
+}
+
+.button{
+	font-size: 30px;
+	color: white;
+	background: #AC0000;	
+	width: 30%;
+	height: 50px;
+	text-align: center;
+	margin: 30px auto;
+	border-radius: 15px;
+	border: 2px solid white;
+	outline: none;
+}
+
+.button:hover {
+	cursor: pointer;
+}
+
 @media screen and (max-width: 1024px){
 	.logo{
 		width: 394px;
